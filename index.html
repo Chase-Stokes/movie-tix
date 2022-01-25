@@ -8,6 +8,35 @@
   <title>Movie Tickets</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Get your movie tickets here!</h1>
+    <form id="movie-tickets">
+    <label>Pick your movie!</label>
+    <select class="form-control" id="movie">
+      <option value="1">Spider-man: No Way Home</option>
+      <option value="2">Scream</option>
+      <option value="3">American Underdog</option>
+    </select>
+    <label>Choose your movie time</label>
+    <select class="form-control" id="time">
+      <option value="4">Matineé showing</option>
+      <option value="5">Evening showing</option>
+    </select>
+    <label>Choose your ticket</label>
+    <select class="form-control" id="age">
+      <option value="6">Kids ticket</option>
+      <option value="7">Regular ticket</option>
+      <option value="8">Senior ticket</option>
+    </select>
+    <button type="submit">Get my ticket!</button>
+  </form>
 
+  <div id="results">
+    <p>You have chosen <span id="ageChoice">CHOICE HERE</span></p>
+    <p>You have chosen to see <span id="movieChoice">CHOICE HERE</span></p>
+    <p>for a <span id="showing">CHOICE HERE</span></p>
+    <p id="ticketPrice"> Price.</p>
+  </div>
+  </div>
 </body>
 </html>
