@@ -32,9 +32,10 @@ TicketStub.prototype.totalCost = function(ticket) {
 };
 
 TicketStub.prototype.displayTicket = function () {
+  $("#results").show();
   $("#movieChoice").text($("select#movie option:selected").text());
-  $("#ageChoice").text($("select#movie option:selected").text());
-  $("#showing").text($("select#movie option:selected").text());
+  $("#ageChoice").text($("select#age option:selected").text());
+  $("#showing").text($("select#time option:selected").text());
   $("#ticketPrice").text(this.cost);
 }
 
@@ -47,7 +48,5 @@ $(document).ready(function(){
     let ticket = new TicketStub(movie, time, age);
     ticket.totalCost();
     ticket.displayTicket();
-    console.log(ticket);
-    console.log($("select#movie option:selected").text());
   })
 })
